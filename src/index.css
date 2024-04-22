@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: "Varela Round", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: url(/assets/img/biblioteca.jpg) center center/ cover no-repeat;   
+} 
+
+  .main { 
+    width: 100vh;
+   
+    
+    padding: 20px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+
+
+  }
+
+
+.content-center {
+    width: 80%;
+}
+h1 {
+    font-size: 250%;
+    
+    width: 70%;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 5%;
+    /* background-color: #7dee3bb4;  */
+    padding: 20px; 
+    /* border-radius: 10px;  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);      
+    animation: moveText 2s ease-in-out infinite alternate; 
+    transition: background-color 0.3s;
+    &:hover{
+      background-color: #ffd350; 
+    }
+} 
+@keyframes moveText {
+  0% {
+      transform: translateX(0); 
+  }
+  100% {
+      transform: translateX(100px); 
+  }
+}
+
+p {
+    font-size: 200%;
+    font-family: "Pacifico", cursive;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    background-color: #7dee3bb4; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+}
+
+button {
+    margin: 10vh;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: solid; 
+    color: #4CAF50; 
+    border: 2px solid #4CAF50; 
+    cursor: pointer; 
+    border-radius: 5px; 
+
+    &:hover {
+		transform: translateY(-4px);
+        background-color: #f1e64f;
+		box-shadow: 10px 3px 10px #161514;
+    
+    }
+   
+    
+  }
